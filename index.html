@@ -35,11 +35,11 @@
       </script>
 
 </head>
-<body>
+<body class="relative">
     <main class="container mx-auto px-4">
 
         <!-- SD Poribhon section start -->
-        <section class="relative">
+        <section class="">
             <!-- set selection section -->
             <div class="grid md:grid-cols-12 py-4">
                 <!-- left part -->
@@ -196,14 +196,18 @@
                         <div class="divider"></div>
                         
                         <!-- Booking seat price -->
-                        <h2 class="flex justify-between items-center "> <span>Total Price</span> <span id="total_price">000</span> </h2>
-                        
-                        <h2 class="flex items-center justify-end relative">
-                          <input id="input_discount_apply" class="w-full p-4 shadow-sm rounded-md" placeholder="Have any cuppon" type="text" name="" id="">
-                          <button id="discount_apply_button"  class="btn btn-md btn-primary absolute ">Apply</button>
+                        <h2 class="flex justify-between items-center ">
+                          <span>Total Price</span> <span id="total_price">000</span>
                         </h2>
                         
-                        <h2 class="flex justify-between items-center "> <span>Grand Total</span> <span id="grand_price">000</span> </h2>
+                        <div class="flex items-center justify-end relative">
+                          <input id="input_discount_apply" class="w-full p-4 shadow-sm rounded-md" placeholder="Have any cuppon" type="text" name="" id="">
+                          <button id="discount_apply_button"  class="btn btn-md btn-primary absolute ">Apply</button>
+                        </div>
+                        
+                        <h2 class="flex justify-between items-center ">
+                          <span>Grand Total</span> <span id="grand_price">000</span>
+                        </h2>
 
                       </div>
                     </div>
@@ -246,21 +250,21 @@
 
         <!-- SD Poribhon section end -->
 
-        <!-- Modle conatiner -->
-        <section class="hidden">
-          <div class="h-[100vh] w-[100vw] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center items-center">
-            <div class="flex flex-col justify-center items-center gap-4 w-2/4 px-8 py-16 shadow-2xl rounded-lg bg-slate-50">
-              <p><img src="./assets/success.png" alt=""></p>
-              <h1 class="text-4xl font-medium text-green-300">SUCCESS</h1>
-              <h3 class="text-2xl font-bold text-center">Thank you for Booking Our Bus Seats. <br> We are working hard to find the best service and deals for you</h3>
-              <h1 class="text-4xl font-light">Shortly you will find a confirmation in your email</h1>
-              <button class="btn btn-success w-full mt-5 text-2xl text-white">continue</button>
-              
-            </div>
-          </div>
-        </section>
-        
     </main>
+
+    <!-- Modeal conatiner -->
+    <section id="success_modeal" class="hidden w-[100vw] h-[100vh] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+      <div class=" flex justify-center items-center">
+        <div class="flex flex-col justify-center items-center gap-4 w-2/4 px-8 py-16 shadow-2xl rounded-lg bg-slate-50">
+          <p><img src="./assets/success.png" alt=""></p>
+          <h1 class="text-4xl font-medium text-green-300">SUCCESS</h1>
+          <h3 class="text-2xl font-bold text-center">Thank you for Booking Our Bus Seats. <br> We are working hard to find the best service and deals for you</h3>
+          <h1 class="text-4xl font-light">Shortly you will find a confirmation in your email</h1>
+          <button class="btn btn-success w-full mt-5 text-2xl text-white">continue</button>
+          
+        </div>
+      </div>
+    </section>
 
     <script src="./js/utility.js"></script>
     <script src="./js/bus_ticket.js"></script>
